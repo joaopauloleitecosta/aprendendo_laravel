@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('titulo', 'Meu site - Serviços')
+@section('titulo', $titulo)
 
 @section('content')
     <h1>Nossa página de serviços</h1>    
