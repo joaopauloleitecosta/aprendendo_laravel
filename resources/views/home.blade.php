@@ -13,4 +13,8 @@
         @endif
 
     </h1>
+
+    <p> - Número sem formatar: 1000</p>
+    <p> - Número formatado com a diretiva criada: @moeda(1000)</p>
+    <p> - Número com o number format: <?php echo number_format(1000, 2, ',', '.'); ?></p>
 @endsection
