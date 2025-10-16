@@ -9,7 +9,9 @@ class SiteController extends Controller
     public function home() 
     {
         $mostraRodape = true;
-        return view('home', ['mostraRodape' => $mostraRodape]);
+        $userType = 'admin';
+
+        return view('home', ['mostraRodape' => $mostraRodape, 'userType' => $userType]);
     }
 
     public function services() 
