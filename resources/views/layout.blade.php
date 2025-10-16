@@ -20,7 +20,7 @@
     </main>
     <hr>
     <footer>
-        @include('footer')
+        @includeWhen($mostraRodape ?? false, 'footer')
     </footer>
 </body>
 </html>

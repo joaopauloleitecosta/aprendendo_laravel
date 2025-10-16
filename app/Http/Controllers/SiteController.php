@@ -8,7 +8,8 @@ class SiteController extends Controller
 {
     public function home() 
     {
-        return view('home');
+        $mostraRodape = true;
+        return view('home', ['mostraRodape' => $mostraRodape]);
     }
 
     public function services() 
