@@ -15,7 +15,15 @@ class SiteController extends Controller
     public function services() 
     {
         $titulo = 'Meu site - Serviços ' . rand(0,10);
-        return view('services', ['titulo' => $titulo]);
+        
+        $services = [
+            ['name' => 'serviço 01', 'description' => 'descrição 01'] ,
+            ['name' => 'serviço 02', 'description' => 'descrição 02']
+        ];
+
+        $repiticoes = 0;
+
+        return view('services', ['titulo' => $titulo, 'services' => $services, 'repeticoes' => $repiticoes]);
     }
 
     public function contact()
